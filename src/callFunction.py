@@ -27,5 +27,7 @@ eng = matlab.engine.start_matlab()
 
 state, control = eng.PlanPath(start, goal,nargout = 2)
 
+eng.quit()
+
 print(state)
 print(control)
